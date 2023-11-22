@@ -1,0 +1,33 @@
+﻿ ```xaml<StackPanel>
+    <TextBox x:Name="txtName" PlaceholderText="Имя клиента" />
+    <TextBox x:Name="txtAddress" PlaceholderText="Адрес доставки" />
+    <TextBox x:Name="txtPhone" PlaceholderText="Телефон клиента" />
+</StackPanel>
+```
+
+2. Ресторан:
+```xaml
+<StackPanel>
+    <TextBox x:Name="txtRestaurantName" PlaceholderText="Название ресторана" />
+    <TextBox x:Name="txtRestaurantAddress" PlaceholderText="Адрес ресторана" />
+    <TextBox x:Name="txtRestaurantPhone" PlaceholderText="Телефон ресторана" />
+</StackPanel>
+```
+
+3. Блюдо:
+```xaml
+<StackPanel>
+    <TextBox x:Name="txtDishName" PlaceholderText="Название блюда" />
+    <TextBox x:Name="txtDishDescription" PlaceholderText="Описание блюда" />
+    <TextBox x:Name="txtDishPrice" PlaceholderText="Цена блюда" />
+</StackPanel>
+```
+
+4. Заказ:
+```xaml
+<StackPanel>
+    <ComboBox x:Name="cmbClient" PlaceholderText="Выберите клиента" />
+    <ComboBox x:Name="cmbRestaurant" PlaceholderText="Выберите ресторан" />
+    <TextBox x:Name="txtTotalPrice" PlaceholderText="Общая стоимость заказа" />
+    <Button Content="Добавить блюдо" Click="AddDish_Click" />
+    <ListView x:Name="lv
